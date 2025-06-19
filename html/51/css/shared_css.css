@@ -1,0 +1,32 @@
+html { max-width: 1250px;
+margin: auto;
+}
+body {
+    border: 10px solid;
+    border-radius: 15px;
+    padding: 35px;
+    background-color: bisque;
+    margin: 30px;
+    overflow:auto
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    font-size: 60%;
+}
+.opening {border: 7px solid black;
+border-radius: 12px;
+max-width: 650px;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 30px;}
+span {display: block;}
+.offer {font-size: 1.5em;}

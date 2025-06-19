@@ -1,3 +1,13 @@
-body{text-align: center; font-size: 2em; background-color: bisque; }
-h1 {text-decoration-line: underline;}
-p {font-size: .8em;}
+body {
+    text-align: center;
+    font-size: 2em;
+    background-color: bisque;
+}
+
+h1 {
+    text-decoration-line: underline;
+}
+
+p {
+    font-size: .8em;
+}
