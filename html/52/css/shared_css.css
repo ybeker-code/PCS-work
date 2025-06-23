@@ -41,3 +41,13 @@ span {
 .offer {
     font-size: 1.5em;
 }
+
+.est {
+    clear: left;
+    font-size: larger;
+    font-weight: 400;
+    padding: 30px;
+    padding-bottom: 0%;
+    text-align: center;
+    transform: skew(15deg);
+}
