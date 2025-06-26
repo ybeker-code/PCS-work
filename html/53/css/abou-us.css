@@ -1,0 +1,57 @@
+header {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+main span {
+    display: inline;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tamid {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+main {
+    border-top: 2px solid;
+    margin-top: 40px;
+    padding-top: 40px;
+    font-size: 2em;
+    text-align: justify;
+    line-height: 2em;
+}
+
+img {
+    width: 500px;
+    padding-right: 20px;
+    float: left;
+    position: relative;
+    opacity: .8;
+    cursor: grab
+}
+
+image:hover {
+    width: 800px;
+    /* scale: 2 2; */
+    z-index: 1;
+}
+
+.opening {
+    box-shadow: 2px 2px 2px 2px;
+    background-image: linear-gradient(to right,
+            rgba(235, 205, 170, 1),
+            rgba(211, 211, 211, .6));
+}
+
+.time {
+    font-family: cursive;
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+}
