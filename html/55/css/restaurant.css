@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+strong {
+    color: darkred;
+}

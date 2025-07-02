@@ -1,0 +1,118 @@
+header {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+main span {
+    display: inline;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tamid {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+main {
+    border-top: 2px solid;
+    margin-top: 40px;
+    padding-top: 40px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+}
+
+img {
+    width: 500px;
+    padding-right: 20px;
+    position: relative;
+    opacity: .8;
+    cursor: grab
+}
+
+image:hover {
+    width: 800px;
+    /* scale: 2 2; */
+    z-index: 1;
+}
+
+.time {
+    font-family: cursive;
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+}
+
+#title {
+    position: fixed;
+    font-style: italic;
+    font-size: 1.5em;
+    background-color: bisque;
+    text-align: center;
+    top: 0;
+    width: 92px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    border: solid black;
+}
+
+@media (width >=1250px) {
+    main {
+        text-align: justify;
+    }
+
+    img {
+        float: left;
+    }
+
+}
+
+table {
+    font-size: .7em;
+    border: solid black 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: solid black 2px;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(230, 202, 168);
+}
+
+tr:hover {
+    background-color: rgb(188, 163, 131);
+}
+
+td:last-child {
+    color: coral;
+}
+
+caption {
+    width: 20%;
+    margin: auto;
+    border: solid black 5px;
+    border-bottom: none;
+    margin-top: 80px;
+}
+
+#feedback {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}

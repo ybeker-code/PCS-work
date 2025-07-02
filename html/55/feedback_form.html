@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/shared_css.css">
+    <style>
+        input,
+        label {
+            display: block;
+            margin: auto;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="foo"></form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name" required placeholder="Enter Name" autocomplete="additional-name">
+    <label for="pass">Password:</label>
+    <input id="pass" type="password" name="password" minlength="4" title="Must be at least 4 characters"
+        placeholder="Enter Password">
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" name="comment" title="Please explain how we can improve your experience.">
+    <input type="submit">
+</body>
+
+</html>

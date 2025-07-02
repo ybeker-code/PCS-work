@@ -1,0 +1,68 @@
+html {
+    max-width: 1250px;
+    margin: auto;
+    overflow: auto;
+}
+
+body {
+    border: 10px solid;
+    border-radius: 15px;
+    padding: 35px;
+    background-color: rgb(255, 228, 196);
+    margin: 8px;
+    overflow: auto
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    font-size: 60%;
+}
+
+.opening {
+    border: 7px solid black;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 2px;
+    background-image: linear-gradient(to right,
+            rgba(235, 205, 170, 1),
+            rgba(211, 211, 211, .6));
+    position: sticky;
+    top: 100;
+
+}
+
+span {
+    display: block;
+}
+
+.offer {
+    font-size: 1.5em;
+}
+
+.est {
+    clear: left;
+    font-size: larger;
+    font-weight: 400;
+    padding: 30px;
+    padding-bottom: 0%;
+    text-align: center;
+    transform: skew(15deg);
+}
+
+header {
+    overflow: auto;
+    box-sizing: border-box;
+    xheight: 550px;
+    overflow-y: visible;
+}
