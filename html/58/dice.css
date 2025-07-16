@@ -1,0 +1,151 @@
+html {
+    justify-items: center;
+}
+
+body {
+    background-color: teal;
+    border: 3px solid blue;
+    border-radius: 15px;
+    width: min-content;
+    padding: 1em;
+    padding-bottom: 0;
+    display: grid;
+    grid-template: 200px 200px 200px/200px 200px;
+    grid-template-areas:
+        'one two'
+        'three four'
+        'five six';
+    gap: 1em;
+    justify-content: center;
+}
+
+.dice:nth-child(1) {
+    grid-area: one;
+}
+
+.dice:nth-child(2) {
+    grid-area: two;
+}
+
+.dice:nth-child(3) {
+    grid-area: three;
+}
+
+.dice:nth-child(4) {
+    grid-area: four;
+}
+
+.dice:nth-child(5) {
+    grid-area: five;
+}
+
+.dice:nth-child(6) {
+    grid-area: six;
+}
+
+
+.dice {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    gap: 1em;
+    grid-template: repeat(3, 35px) / repeat(3, 35px);
+    grid-template-areas:
+        'one two three'
+        'four five six'
+        'seven eight nine';
+    justify-content: center;
+    align-content: center;
+}
+
+
+.dice .dot {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.dice:nth-child(1) .dot:nth-child(1) {
+    grid-area: five;
+}
+
+.dice:nth-child(2) .dot:nth-child(1) {
+    grid-area: two;
+}
+
+.dice:nth-child(2) .dot:nth-child(2) {
+    grid-area: eight;
+}
+
+.dice:nth-child(3) .dot:nth-child(1) {
+    grid-area: one;
+}
+
+.dice:nth-child(3) .dot:nth-child(2) {
+    grid-area: five;
+}
+
+.dice:nth-child(3) .dot:nth-child(3) {
+    grid-area: nine;
+}
+
+.dice:nth-child(4) .dot:nth-child(1) {
+    grid-area: one;
+}
+
+.dice:nth-child(4) .dot:nth-child(2) {
+    grid-area: three;
+}
+
+.dice:nth-child(4) .dot:nth-child(3) {
+    grid-area: seven;
+}
+
+.dice:nth-child(4) .dot:nth-child(4) {
+    grid-area: nine;
+}
+
+.dice:nth-child(5) .dot:nth-child(1) {
+    grid-area: one;
+}
+
+.dice:nth-child(5) .dot:nth-child(2) {
+    grid-area: three;
+}
+
+.dice:nth-child(5) .dot:nth-child(3) {
+    grid-area: five;
+}
+
+.dice:nth-child(5) .dot:nth-child(4) {
+    grid-area: seven;
+}
+
+.dice:nth-child(5) .dot:nth-child(5) {
+    grid-area: nine;
+}
+
+.dice:nth-child(6) .dot:nth-child(1) {
+    grid-area: one;
+}
+
+.dice:nth-child(6) .dot:nth-child(2) {
+    grid-area: three;
+}
+
+.dice:nth-child(6) .dot:nth-child(3) {
+    grid-area: four;
+}
+
+.dice:nth-child(6) .dot:nth-child(4) {
+    grid-area: six;
+}
+
+.dice:nth-child(6) .dot:nth-child(5) {
+    grid-area: seven;
+}
+
+.dice:nth-child(6) .dot:nth-child(6) {
+    grid-area: nine;
+}
