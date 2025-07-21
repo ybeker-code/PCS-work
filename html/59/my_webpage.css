@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-family: helvetica, arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+nav ul {
+    grid-column: 2/-2;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 1em;
+    margin-left: 0;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+header {
+    background-color: lightgray;
+    border-end-end-radius: 7px;
+    border-end-start-radius: 7px;
+    grid-column: 2/-2;
+    justify-items: center;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+main {
+    grid-column: 2/-2;
+    padding-bottom: 4em;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer div {
+    grid-column: 2/-2;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+#form {
+    background-color: lightgray;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1em;
+}
+
+span input {
+    border-radius: 5px;
+    box-shadow: rgba(125, 125, 125, 1) 2px 2px 2px 2px;
+    width: 60%;
+    justify-content: left;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+form span {
+    grid-column: 2/-2;
+}
+
+input:last-child {
+    grid-column: 2/-2;
+    max-width: max-content;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: rgba(125, 125, 125, 1) 2px 2px 2px 2px;
+}
+
+table {
+    border-collapse: collapse;
+    justify-self: center;
+    width: 650px;
+}
+
+th,
+td {
+    border: 1.5px solid teal;
+    padding: 3px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightcyan;
+}
+
+table tr:hover {
+    background-color: lightblue;
+}
+
+td,
+tfoot {
+    text-align: end;
+}
+
+td:last-child {
+    color: red;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+caption {
+    font-weight: 700;
+}
+
+#table {
+    overflow-x: auto;
+}
+
+@media (1000px <=width) {
+    #name_in {
+        grid-column: 3/6;
+    }
+
+    #email_in {
+        grid-column: 6/9;
+    }
+
+    #submit {
+        grid-column: 9/11;
+    }
+}
+
+@media (800px <=width) {
+    .product_all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    .product:not(:last-child) {
+        border-right: solid black 1px;
+        padding-right: 1em;
+    }
+
+    .product p {
+        margin-bottom: 0;
+    }
+}
