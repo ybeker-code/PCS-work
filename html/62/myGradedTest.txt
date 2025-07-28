@@ -1,0 +1,4 @@
+There were 3 things wrong. (I have since fixed them)
+1. Text was not justified. 
+2. On large screens, one picture (the candy) was slightly bigger.
+3. On small screens when the table scrolled, the beginning of it was cut off. (Even when you scrolled to the beginning, it wouldn't show the first column. I figured out that it had to do with the fact that it was centered on the page.)

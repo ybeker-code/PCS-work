@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-family: helvetica, arial, sans-serif;
+    text-align: justify;
 }
 
 nav {
@@ -115,8 +116,13 @@ input:last-child {
 
 table {
     border-collapse: collapse;
-    justify-self: center;
     width: 650px;
+}
+
+@media (650px <=width) {
+    table {
+        justify-self: center;
+    }
 }
 
 th,
