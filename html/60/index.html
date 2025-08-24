@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="icons/person-vcard2.svg">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Profile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#techSkills">Technical Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#credentials">Credentials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="p-5 text-center bg-info bg-gradient"> <svg style="color: var(--bs-gray-700);" width="100" height="100"
+            aria-hidden="true">
+            <use xlink:href="icons/person-vcard2.svg"></use>
+        </svg>
+        <h1 class="text-body-emphasis">Yehuda Beker</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+            Full Stack Software Developer
+        </p>
+        <div class="d-inline-flex gap-2 mb-5"> <a
+                class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button"
+                href="YehudaBekerResume.html" target="_blank" rel="noopener noreferrer">My Resume<svg class="bi ms-2"
+                    width="24" height="24" aria-hidden="true">
+                    <use xlink:href="icons/arrow-right-short.svg"></use>
+                </svg></a>
+            <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button" href="#contact">Contact info</a>
+        </div>
+    </div>
+    <div class="container-xxl px-0">
+        <div class="bg-info-subtle px-5 pb-4" id="about">
+            <h4 class="text-center pt-3">About me</h4>
+            <article>I am a motivated and detail-oriented full stack software developer with excellent critical thinking
+                skills. I also have a nack for analizing, breaking down, and solving complex problems. In adddition, I
+                posess great communication, collaboration and teamwork skills. These skills were honed through years of
+                in depth study, research, and development in the field of talmudic legal theory.</article>
+        </div>
+        <div class="bg-body-secondary px-5 py-4" id="techSkills">
+            <h4>Technical skills</h4>
+            <article>
+                <ul class=" mb-0">
+                    <li class=""><strong>Programming Languages: </strong>C#, SQL, HTML, CSS, JavaScript (in progress),
+                        Python (planned)</li>
+                    <li class=""><strong>Technologies & Tools: </strong>JSON, XML, Git, Visual Studio</li>
+                    <li><strong>Core Competencies: </strong>Software Development, Text/Data Analysis, Research, Team
+                        Coordination, Problem Solving</li>
+                </ul>
+            </article>
+        </div>
+        <h4 class="text-center p-1 mb-0 mt-2">More Info</h4>
+        <div class="accordion accordion-flush border border-secondary" id="accordionExample">
+            <div class="accordion-item" id="credentials">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Credentials
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="mb-0">
+                            <li>Currently pursuing a <strong>B.S. in Computer Programming and
+                                    Technology</strong> through Woodmont College</li>
+                            <li>Currently taking the <strong>Software Development
+                                    Course</strong>
+                                at <strong>PCS</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="projects">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Projects
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5 class="fw-normal">This is a display of some of the prodjects that I've done </h5>
+                        <article>
+                            <ul class="xlist-group mb-0">
+                                <li class="xlist-group-item"><strong>This website - </strong>I created it using
+                                    Bootstrap.</li>
+                                <li class="xlist-group-item"></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="contact">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Contact info
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div>phone: (848) 226‑0810 </div>
+                        <div>email: ybeker@woodmontcollege.edu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
