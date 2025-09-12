@@ -1,0 +1,22 @@
+#colorTable {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    color: black;
+}
+
+th {
+    border: 2px solid;
+    width: 33%;
+    background-color: gray;
+}
+
+td {
+    border: 1px solid;
+    background-color: lightgray;
+}
+
+caption {
+    background-color: lightgray;
+}
