@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="msg">
+    <input id="modal" type="checkbox">modal
+    <button id="show">show</button>
+    <label>yes<input id="yes" type="checkbox"></label>
+    <label>no<input id="no" type="checkbox"></label>
+    <label>maybe<input id="maybe" type="checkbox"></label>
+    <script src="messageBox.js"></script>
+    <script>
+        const yes = document.querySelector('#yes');
+        const no = document.querySelector('#no');
+        const maybe = document.querySelector('#maybe');
+        const print = (message) => console.log(message);
+
+        show.addEventListener('click', () => {
+            buttonArray = [yes, no, maybe];
+            const callbackArray = [];
+            let callback;
+            let temp;
+            for (let index = 0; index < buttonArray.length;) {
+                if (!buttonArray[index].checked) {
+                    buttonArray.splice(index, 1);
+                }
+
+                else {
+                    buttonArray[index] = buttonArray[index].id;
+                    index++;
+                }
+            }
+
+            for (let index = 0; index < buttonArray.length; index++) {
+                callback = print.bind(window, `The ${buttonArray[index]} button was pushed.`);
+                callbackArray.push(callback);
+            }
+            pcsMessageBox(msg.value, modal.checked, buttonArray, callbackArray);
+        });
+    </script>
+</body>
+
+</html>
