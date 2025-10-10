@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #icon {
+            height: 150px;
+            width: 180px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -75px;
+            margin-left: -90px;
+            display: none;
+        }
+
+        #display {
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="input">File to load:</label>
+        <input id="input" type="text" placeholder="file name" value="chag.json">
+        <button id="button">submit</button>
+    </form>
+    <div id="display"></div>
+    <img id="icon" src="loadingSpinner.gif" alt="Loading...">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="messageBox.js"></script>
+    <script src="ajax.js"></script>
+</body>
+
+</html>
