@@ -1,0 +1,34 @@
+#title {
+    display: inline;
+}
+
+#form {
+    text-align: center;
+}
+
+#recipeList {
+    font-size: larger;
+}
+
+#recipeName,
+#ingredientList {
+    text-align: center;
+    padding-left: 0;
+}
+
+#recipeName {
+    font-size: 3em;
+}
+
+#ingredientList {
+    text-align: center;
+    display: none;
+}
+
+#image {
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin: auto;
+    display: none;
+}
