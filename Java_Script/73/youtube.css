@@ -1,0 +1,24 @@
+span {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    border: solid black 1px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 175px;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#videoDom {
+    display: none;
+    width: 800px;
+    margin: auto;
+}

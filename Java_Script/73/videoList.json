@@ -1,0 +1,23 @@
+[
+    {
+        "name": "OneMoreDance",
+        "id": "1",
+        "image": "",
+        "alt": "A video of dancing",
+        "url": "media/videos/OneMoreDance.mp4"
+    },
+    {
+        "name": "jumping",
+        "id": "2",
+        "image": "",
+        "alt": "A video of someone jumping",
+        "url": "media/videos/jumping.MP4"
+    },
+    {
+        "name": "spinning",
+        "id": "3",
+        "image": "media/images/spinning.JPG",
+        "alt": "A video of someone spinning",
+        "url": "media/videos/spinning.MP4"
+    }
+]
