@@ -29,8 +29,10 @@
         title: 'Jerusalem'
     });
 
+    infoWindow.setContent('The center of the world');
+
     marker.addListener('click', () => {
-        infoWindow.setContent('The center of the world');
+
         infoWindow.open({
             anchor: marker
         });
@@ -62,22 +64,18 @@
                     itemArray[index].appendChild(thumbnail);
                 }
                 itemArray[index].classList.add('item');
-                itemArray[index].addEventListener('click', event => displaySelection(event));
+                itemArray[index].addEventListener('click', () => displaySelection(index));
                 resultList.appendChild(itemArray[index]);
             }
 
             // Display the selected item on the map
-            function displaySelection(event) {
-                const index = itemArray.indexOf(event.target);
-
-                console.log(data.geonames[index]);
-
-                const targetLocation = new google.maps.LatLng(data.geonames[index].lat, data.geonames[index].lng);
-                //location = { lat: data.geonames[index].lat, lng: data.geonames[index].lng };
-                //location = { lat: 31.7769, lng: 35.2224 };
-                Map.panTo(targetLocation);
-                Map.setZoom(15);
-                infoWindow.setContent(data.geonames[index].summary);
+            function displaySelection(index) {
+                const targetLocation = { lat: data.geonames[index].lat, lng: data.geonames[index].lng };
+                map.panTo(targetLocation);
+                map.setZoom(15);
+                marker.position = targetLocation;
+                marker.title = data.geonames[index].title;
+                infoWindow.setContent(`${data.geonames[index].summary} For more info see <a href="${data.geonames[index].wikipediaUrl}">wikipedia</a>`);
             }
         }
         catch (e) {

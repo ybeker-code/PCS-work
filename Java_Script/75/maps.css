@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+#inputForm {
+    text-align: center;
+    margin-top: 7px;
+    border: black solid 1px;
+    margin: 3px;
+}
+
+#button {
+    margin: 5px;
+}
+
+li {
+    list-style: none;
+    border: black solid 1px;
+    margin: 3px;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
