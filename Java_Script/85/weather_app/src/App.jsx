@@ -6,7 +6,7 @@ import DisplayWeather from './displayWeather';
 export default class App extends Component {
 
   state = {
-    key: 'f4d8cb3845d58ed59c61c603ca5dca0e',
+    key: '',
     zip: 44118,
     weather: {},
     error: null
