@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "chulent",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcqWtLDhqjr-rX83c9HdPIgBmu0pNMxqpu_A&s",
+    "ingredients": ["meat", "potatoes", "all sorts of beans"],
+    "directions": ["add stuff to pot", "turn on fire"]
+  },
+  {
+    "id": 2,
+    "name": "pizza",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHFpIjD3ZEzEYu8vJEFPrD9DfhePLngToCrw&s",
+    "ingredients": ["dough", "sauce", "cheese"],
+    "directions": ["roll out dough", "add sauce and cheese", "bake at 350"]
+  }
+]
+

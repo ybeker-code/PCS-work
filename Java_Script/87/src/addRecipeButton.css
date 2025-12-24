@@ -1,0 +1,20 @@
+input {
+    display: block;
+    justify-self: center;
+    margin-bottom: 8px;
+}
+
+button {
+    margin: 10px;
+}
+
+#add {
+    border: solid black 1px;
+    padding: 5px;
+    width: max-content;
+    justify-self: center;
+}
+
+#comma {
+    font-size: xx-small;
+}
