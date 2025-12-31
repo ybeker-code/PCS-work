@@ -1,0 +1,21 @@
+#page {
+    justify-self: center;
+}
+
+#display {
+    font-size: 100px;
+}
+
+#form {
+    justify-self: center;
+}
+
+.formElement {
+    display: block;
+    justify-self: center;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
