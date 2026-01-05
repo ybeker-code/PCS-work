@@ -1,0 +1,29 @@
+ * {
+   justify-items: center;
+ }
+
+ h1 {
+   margin-bottom: .2em;
+ }
+
+ header {
+   border-bottom: 1px solid black;
+   padding-bottom: .5em;
+   width: 100%;
+ }
+
+ li {
+   list-style-type: none;
+ }
+
+ ul {
+   padding: 0;
+ }
+
+ button {
+   margin-top: 1em;
+ }
+
+ div {
+   text-align: center;
+ }
