@@ -1,0 +1,44 @@
+.blog {
+    border: 2px solid black;
+}
+
+.post,
+.comment {
+    border: 1px solid black;
+}
+
+.postTitle {
+    background-color: mediumaquamarine;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+div {
+    justify-items: center;
+}
+
+a {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    justify-self: center;
+}
+
+#header {
+    border: 2px solid;
+}
+
+h3 {
+    border-bottom: 2px solid;
+    display: block;
+}
