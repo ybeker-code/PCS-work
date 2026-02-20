@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contacts</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="first">first:</label>
+            <input id="first" name="first" />
+        </div>
+        <div class="form-group">
+            <label for="last">last:</label>
+            <input id="last" name="last" required />
+        </div>
+        <div class="form-group">
+            <label for="email">email:</label>
+            <input id="email" name="email" type="email" />
+        </div>
+        <div class="form-group">
+            <label for="phone">phone:</label>
+            <input id="phone" name="phone" type="tel" />
+        </div>
+        <button id="submit">submit</button>
+        <button type="reset">reset</button>
+        <a href='/'><button id="cancel" type="button">cancel</button></a>
+    </form>
+    <script>
+        const submit = document.querySelector('#form');
+        const firstInput = document.querySelector('#first');
+        const lastInput = document.querySelector('#last');
+        const emailInput = document.querySelector('#email');
+        const phoneInput = document.querySelector('#phone');
+        submit.addEventListener('submit', async e => {
+            e.preventDefault();
+
+
+            const newContact = {
+                first: firstInput.value,
+                last: lastInput.value,
+                email: emailInput.value,
+                phone: phoneInput.value,
+            };
+            await fetch('/addContact', {
+                method: 'POST',
+                body: JSON.stringify(newContact),
+                headers: {
+                    'content-type': 'application/json'
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
