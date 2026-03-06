@@ -1,0 +1,3 @@
+<h1>{{ title }}</h1>
+<p>Welcome {{ name }}</p>
+<h3>{{hits}} hits</h3>
